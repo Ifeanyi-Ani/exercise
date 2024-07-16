@@ -1,12 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Button } from "@/components/ui/button";
+import Companies from "./pages/Companies";
+import Preview from "./pages/Preview";
 
 function App() {
   return (
     <>
-      <div>
-        <Button>click me</Button>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Companies />} />
+          <Route path="/company/:id" element={<Preview />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
