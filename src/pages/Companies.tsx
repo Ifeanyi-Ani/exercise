@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import baseUrl from "@/apis/baseUrl";
 import { Table, TableBody, TableCaption } from "@/components/ui/table";
 import TableHeader from "@/components/ui/tables/TableHeader";
-import TableFooter from "@/components/ui/tables/TableFooter";
 import TableBodyRow from "@/components/ui/tables/TableBody";
 
 const Companies = () => {
