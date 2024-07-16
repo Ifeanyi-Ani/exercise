@@ -36,7 +36,6 @@ const Companies = () => {
           <TableBodyRow item={item} key={item.id} />
         ))}
       </TableBody>
-      {isLoading === false && <TableFooter />}
     </Table>
   );
 };
