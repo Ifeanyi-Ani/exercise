@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/carousel";
 import { useParams } from "react-router-dom";
 import baseUrl from "@/apis/baseUrl";
-import Companies from "./Companies";
 
 const SlideItem = ({ image, index }: { image?: any; index?: number }) => {
   return (
