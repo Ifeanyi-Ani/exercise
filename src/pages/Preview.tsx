@@ -51,7 +51,7 @@ const Preview = () => {
         const response = await baseUrl.get("/vendors");
         const data = await response.data.data;
         const filteredData = data?.filter(
-          (data) => Number(data.id) === Number(id),
+          (data: any) => Number(data.id) === Number(id),
         );
         setCompany(filteredData[0]);
       } catch (error) {
@@ -81,7 +81,7 @@ const Preview = () => {
       >
         <CarouselContent>
           {company?.images?.length > 1 ? (
-            company?.images?.map((item, index) => (
+            company?.images?.map((item: any, index: number) => (
               <SlideItem key={index} image={item} index={index} />
             ))
           ) : company?.images?.length === 1 ? (
